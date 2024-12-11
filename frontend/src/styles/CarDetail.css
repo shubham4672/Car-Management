@@ -1,0 +1,126 @@
+.car-detail {
+  padding: 20px;
+}
+
+.car-info {
+  margin-bottom: 20px;
+}
+
+.car-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.car-info p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.car-tags h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.car-tags ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.car-tags li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.car-images img {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.update-form {
+  margin-top: 30px;
+}
+
+.update-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.update-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.update-form button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.update-form button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.update-button, .delete-button, .back-button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.update-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.back-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.cancel-button:hover {
+  background-color: #bbb;
+}
