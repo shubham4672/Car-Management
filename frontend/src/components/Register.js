@@ -1,64 +1,72 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import API from '../api/api';  // Assuming you have an API file to handle requests
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import API from "../api/api"; // Assuming you have an API file to handle requests
+import "../styles/Register.css";
 
 const Register = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      alert('Passwords do not match');
+      alert("Passwords do not match");
       return;
     }
 
     try {
-      await API.post('/auth/register', { name, email, password });  // Send name, email, password to backend
-      navigate('/login'); 
+      await API.post("/auth/register", { name, email, password }); // Send name, email, password to backend
+      navigate("/login");
     } catch (error) {
-      console.error('Error registering:', error);
-      alert('Registration failed');
+      console.error("Error registering:", error);
+      alert("Registration failed");
     }
   };
 
   return (
-    <div className="register">
-      <h2>Register</h2>
+    <div className='register'>
+      <h2 className='text-4xl font-semibold mb-8 pt-4 cursor-default'>
+        Register
+      </h2>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
-          placeholder="Name"
+          type='text'
+          placeholder='Name'
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
         <input
-          type="email"
-          placeholder="Email"
+          type='email'
+          placeholder='Email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <input
-          type="password"
-          placeholder="Password"
+          type='password'
+          placeholder='Password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
         <input
-          type="password"
-          placeholder="Confirm Password"
+          type='password'
+          placeholder='Confirm Password'
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-        <button type="submit">Register</button>
+        <button
+          type='submit'
+          className='w-1/3 mt-4 bg-green-600 hover:bg-green-500 text-2xl font-medium'
+        >
+          Register
+        </button>
       </form>
     </div>
   );
