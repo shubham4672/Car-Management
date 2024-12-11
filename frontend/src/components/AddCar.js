@@ -37,7 +37,7 @@ const AddCar = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} method='post'>
       <input
         type='text'
         placeholder='Car Title'
