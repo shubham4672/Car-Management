@@ -8,15 +8,15 @@ Leveraging the power of the MERN stack (MongoDB, Express, React, Node.js), the a
 
 ## Key Features:
 
-Search and Filter: Quickly find cars by model name, manufacturer, or other criteria.
+# Search and Filter: Quickly find cars by model name, manufacturer, or other criteria.
 
-CRUD Operations: Manage car listings with full Create, Read, Update, and Delete functionality.
+# CRUD Operations: Manage car listings with full Create, Read, Update, and Delete functionality.
 
-Data Management: Reliable and efficient storage using MongoDB.
+# Data Management: Reliable and efficient storage using MongoDB.
 
-Scalable Architecture: Built using the MERN stack for flexibility and future enhancements.
+# Scalable Architecture: Built using the MERN stack for flexibility and future enhancements.
 
-Responsive Design: Accessible across devices, including desktops, tablets, and smartphones.
+# Responsive Design: Accessible across devices, including desktops, tablets, and smartphones.
 
 ## Installation and Setup
 
@@ -28,25 +28,25 @@ Navigate to the Project Directory: `cd car-management-app`
 
 Install back-end dependencies:
 
-cd backend
-npm install
+`cd backend`
+`npm install`
 
 Install front-end dependencies:
 
-cd ../frontend
-npm install
+`cd ../frontend`
+`npm install`
 
 ## Run the Application:
 
 Start the back-end server:
 
-cd backend
-npm start
+`cd backend`
+`npm start`
 
 Start the front-end:
 
-cd ../frontend
-npm run start
+`cd ../frontend`
+`npm run start`
 
 ## Access the App:
 
