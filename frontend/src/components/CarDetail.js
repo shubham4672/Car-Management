@@ -66,15 +66,15 @@ const CarDetail = () => {
   if (!car) return <div>Loading...</div>; // Wait until car data is fetched
 
   return (
-    <div className='car-detail'>
-      <div className='car-info'>
-        <h3>{car.title}</h3>
-        <p>{car.description}</p>
+    <div className='car-detail w-screen'>
+      <div className='car-info flex flex-col justify-center items-center mx-auto'>
+        <h3 className='text-8xl cursor-default font-semibold'>{car.title}</h3>
+        <p className='font-light'>{car.description}</p>
 
         {/* Display tags in a single line below the description */}
         <div className='car-tags'>
-          <h4>Tags:</h4>
-          <p>{car.tags.join(", ")}</p> {/* Render tags in a single line */}
+          <h4 className='text-black font-mono'>Hashtags:</h4>
+          <p className='max-w-96 font-mono'>{car.tags.join(", ")}</p>{" "}
         </div>
 
         <div className='car-images'>

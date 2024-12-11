@@ -47,6 +47,7 @@ Start the front-end:
 
 `cd ../frontend`
 `npm run start`
+`npm run dev`
 
 ## Access the App:
 
@@ -55,10 +56,11 @@ Open your browser and navigate to http://localhost:3000.
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
-Fork the repository.
-Create a new branch for your feature/mycontribution.
-Commit your changes with clear messages.
-Submit a pull request.
+
+> Fork the repository.
+> Create a new branch for your feature/mycontribution.
+> Commit your changes with clear messages.
+> Submit a PR.
 
 ## License
 
